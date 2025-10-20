@@ -1,4 +1,4 @@
-name = "my-site"
+name = "gnbohio"
 compatibility_date = "2025-10-20"
 main = "worker.js"
 type = "javascript"
