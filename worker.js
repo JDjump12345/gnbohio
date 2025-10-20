@@ -1,15 +1,20 @@
-addEventListener("fetch", event => {
+addEventListener('fetch', event => {
   event.respondWith(handleRequest(event.request));
 });
 
 async function handleRequest(request) {
   const url = new URL(request.url);
-  
-  // Serve JSON files from rss folder
-  if (url.pathname.startsWith("/rss/")) {
-    return fetch(new URL(`dist${url.pathname}`, import.meta.url));
-  }
+  let path = url.pathname;
 
-  // Serve everything else from dist
-  return fetch(new URL(`dist${url.pathname}`, import.meta.url));
+  // Default to index.html
+  if (path === '/') path = '/index.html';
+
+  try {
+    // Fetch the file from the dist folder
+    const response = await fetch(new URL(`./dist${path}`, import.meta.url));
+    if (!response.ok) throw new Error('Not found');
+    return response;
+  } catch (e) {
+    return new Response('404 Not Found', { status: 404 });
+  }
 }
