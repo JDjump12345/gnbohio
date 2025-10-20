@@ -1,9 +1,5 @@
 name = "gnbohio"
-main = ""   # no Worker script, just static site
 compatibility_date = "2025-10-20"
 
-type = "javascript"
-
 [site]
-bucket = "./dist"
-entry-point = "."  # points to your root, where wrangler.toml is
+bucket = "./dist"  # where your index.html and rss/ folder are
