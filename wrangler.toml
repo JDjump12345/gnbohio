@@ -1,7 +1,6 @@
 name = "gnbohio"
 compatibility_date = "2025-10-20"
-type = "javascript"
+main = "worker.js"
 
 [site]
-bucket = "."        # Serve files from current directory
-entry-point = "."   # worker.js is here
+bucket = "."   # Serve all files from current directory
