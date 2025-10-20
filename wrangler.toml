@@ -1,5 +1,0 @@
-name = "gnbohio"
-compatibility_date = "2025-10-20"
-
-[site]
-bucket = "./dist"  # where your index.html and rss/ folder are
