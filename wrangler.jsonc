@@ -1,6 +1,7 @@
+{
     "name": "ohiooo",
-	    "compatibility_date": "2025-10-20",
-	    "assets": {
-	      "directory": "./dist"
-	    }
-	  }
+    "compatibility_date": "2025-10-20",
+    "assets": {
+        "directory": "./dist"
+    }
+}
