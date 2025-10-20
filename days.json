@@ -85,7 +85,7 @@
   { "month": 9, "type": "week", "name": "National Suicide Prevention Week", "rule": { "kind": "nthWeek", "which": "first" } },
 
   { "month": 10, "type": "day", "name": "Dermatillomania Awareness Day", "rule": { "kind": "fixed", "day": 1 } },
-  { "month": 10, "type": "day", "name": "Disabled Authors Day", "rule": { "kind": "fixed", "day": 2 } },
+  { "month": 10, "type": "day", "name": "Disabled Authors Day", "rule": { "kind": "fixed", "day": 20 } },
   { "month": 10, "type": "day", "name": "National Depression Screening Day", "rule": { "kind": "nthWeekdayOfMonth", "weekday": 4, "nth": 2 }, "note": "Thursday of the first full week of October" },
   { "month": 10, "type": "day", "name": "Depression Awareness Day", "rule": { "kind": "nthWeekdayOfMonth", "weekday": 4, "nth": 2 } },
   { "month": 10, "type": "day", "name": "National Day Without Stigma", "rule": { "kind": "fixed", "day": 9 } },
@@ -113,3 +113,4 @@
   { "month": 12, "type": "day", "name": "International Day of Persons with Disabilities", "rule": { "kind": "fixed", "day": 3 } },
   { "month": 12, "type": "month", "name": "Seasonal Affective Disorder Awareness Month" }
 ]
+
