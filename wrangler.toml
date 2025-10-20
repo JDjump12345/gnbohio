@@ -1,4 +1,9 @@
 name = "gnbohio"
 compatibility_date = "2025-10-20"
-main = "worker.js"
-type = "html"
+
+# Tell Wrangler this is a static site
+type = "javascript"
+
+[site]
+bucket = "./dist"      # your dist folder
+entry-point = "."      # can stay as root
