@@ -1,6 +1,6 @@
-name = "gnbohio"
+name = "my-site"
 compatibility_date = "2025-10-20"
 main = "worker.js"
 
 [site]
-bucket = "."   # Serve all files from current directory
+bucket = "./dist"
